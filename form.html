@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <header class="header">
+    <div class="headername bold"><h1>Auto super shop</h1></div>
+
+      <div class="headerform"><a href="index.html">Atgal</a></div>
+      <div class="headerform"><a href="contact.html">Kontaktai</a></div>
+
+  </header>
+  <body>
+    <div class="flexbox">
+      <div class="formbox">
+        <form>
+          <label for="name">Vardas ir Pavarde</label>
+          <input type="text" id="name" required />
+          <br />
+          <label for="model">Automobilio modelis</label>
+          <input type="text" id="model" required />
+          <br />
+          <label for="date">Data</label>
+          <input type="date" id="date" min="2025-02-27" />
+          <br />
+          <label for="status">Statusas</label>
+          <select id="status">
+            <option value="laukiama">Laukiama</option>
+            <option value="vykdoma">Vykdoma</option>
+            <option value="baigta">Baigta</option>
+          </select>
+          <br />
+          <label for="info">Aprasymas</label>
+          <textarea id="info" cols="40" rows="15"></textarea>
+
+          <br />
+          <button type="submit" id="confirmBtn">Patvirtinti</button>
+          <button id="remove">Remove</button>
+        </form>
+
+        <div class="border">
+            <div class="container"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer class="footer"></footer>
+  <div class="rest"></div>
+  <script type="module" src="index.js"></script>
+</html>
