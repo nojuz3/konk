@@ -8,6 +8,7 @@ import {
   child,
   remove,
   get,
+  update,
 } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-database.js";
 
 const database = getDatabase(app);
@@ -18,9 +19,9 @@ const description = document.getElementById("info");
 const date = document.getElementById("date");
 const status = document.getElementById("status");
 const confirmBtn = document.getElementById("confirmBtn");
-const update = document.getElementById("update");
 const container = document.querySelector(".container");
 const removeBtn = document.getElementById("remove");
+
 
 confirmBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -34,6 +35,7 @@ confirmBtn.addEventListener("click", (e) => {
   })
     .then(() => {
       console.log("Data inserted successfully");
+      location.reload()
     })
     .catch((error) => {
       console.error("Error inserting data: ", error);
@@ -64,7 +66,7 @@ onValue(ref(database, "Automobilis/" + name.value), (snapshot) => {
     .catch((error) => {
       console.error(error);
     });
-
+    
   console.log(data);
 });
 

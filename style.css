@@ -7,6 +7,7 @@ body{
     background-color: lightgray;
     position: sticky;
     justify-content: space-around;
+    border: 1px solid black;
 }
 .headername{
     width: 40%;
@@ -25,12 +26,16 @@ body{
 .footer{
     height: 80px;
     background-color: lightgray;
-    
+    border: 1px solid black;
+    text-align: center;
+
 }
 
 .rest{
     background-color: rgb(232, 232, 232);
     height: 300px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .border{
@@ -68,3 +73,93 @@ h3{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
+
+/* Contact */
+
+.contactbox{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 800px;
+}
+.contacts{
+    border: 1px solid black;
+    background-color: rgb(232, 232, 232);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.contactHead{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contactText{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+}
+
+
+
+
+.contbox{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 1000px;
+}
+.cont{
+    border: 1px solid black;
+    background-color: rgb(232, 232, 232);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.fot{
+    margin-right: 60px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .header{
+        display: flex;
+        height: 150px;
+        background-color: lightgray;
+        position: sticky;
+        justify-content: space-around;
+        font-size: small;
+    }
+    .headername{
+        width: 30%;
+        align-content: center;
+        text-align: center;
+        
+    }
+    .formbox{
+        border: 1px solid black;
+        background-color: rgb(232, 232, 232);
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    label{
+        display: flex;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    input{
+        width: 200px;
+        height: 20px;
+    }
+    .formbox{
+        border: 1px solid black;
+        background-color: rgb(232, 232, 232);
+        width: 100%;
+        display: flex;
+    }
+  }
